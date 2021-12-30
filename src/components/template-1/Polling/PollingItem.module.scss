@@ -1,0 +1,20 @@
+.pollingItem {
+  .pollingTitle {
+    color: rgb(63, 63, 63);
+  }
+  .pollingOption {
+    color: #2c2c2c;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    // background-color: #ffffff;
+  }
+  .pollingOptionTitle {
+    color: #2c2c2c;
+  }
+  .voteCount {
+    color: rgb(46, 46, 46);
+  }
+}

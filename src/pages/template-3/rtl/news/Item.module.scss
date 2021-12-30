@@ -1,0 +1,44 @@
+@import "scss/defaultVariables.scss";
+
+.contentWrapper {
+  border-top: 1px solid #d6d9d9;
+  // h2{
+
+  // }
+}
+
+.newsRotitr {
+  font-size: 1em;
+}
+
+.newsTitrWrapper {
+  font-size: 1.75em;
+}
+.newsTitr {
+  color: $black;
+}
+.contentWrapper h2 {
+  font-size: 1.25em;
+}
+.contentWrapper p {
+  text-align: justify;
+  font-size: 14px;
+}
+
+.pillData {
+  background-color: $keyword-bg-color;
+  color: $black;
+  padding: 3px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.relatedNewsWrapper {
+  // background-color: #dbdbdb;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 5px #0000000c;
+  .relatedNewsHeader {
+    color: $primary-color;
+  }
+}

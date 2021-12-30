@@ -1,0 +1,34 @@
+@import 'scss/defaultVariables.scss';
+
+.NewsWrapper {
+	.hasBullet {
+		position: relative;
+
+		&:before {
+			position: absolute;
+			right: -10px;
+			top: 7px;
+			content: '';
+			border: 3px solid $primary-text-color;
+		}
+	}
+
+	h3 {
+		font-size: 13px;
+		line-height: 20px;
+
+		.titrAnchor {
+			color: #000;
+
+			&:hover {
+				color: $green-color;
+			}
+		}
+	}
+}
+
+.newsList {
+	.newsItem:not(:last-child) {
+		border-bottom: 1px solid #e8e8e8 !important;
+	}
+}

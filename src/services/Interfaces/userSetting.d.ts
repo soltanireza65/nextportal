@@ -1,0 +1,3 @@
+namespace IUserSetting {
+  interface IFavoriteCategories {}
+}

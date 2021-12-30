@@ -1,0 +1,32 @@
+@import 'scss/defaultVariables.scss';
+
+.wrapper {
+	position: relative;
+
+	.contentWrapper {
+		position: absolute;
+		width: 100%;
+		height: auto;
+		bottom: 0;
+		// background: $black;
+		// background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 100%);
+
+		h4 {
+			color: $white;
+			font-size: 13px;
+		}
+
+		h2 {
+			font-size: 20px;
+
+			.titrAnchor {
+				color: $white;
+
+				&:hover {
+					color: $home-top-text-color;
+					text-shadow: 0 0 20px $white;
+				}
+			}
+		}
+	}
+}

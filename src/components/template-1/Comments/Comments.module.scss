@@ -1,0 +1,35 @@
+@import 'scss/defaultVariables.scss';
+
+.commentWrapper {
+  background-color: $keyword-bg-color;
+  overflow: hidden;
+
+  .commentCard {
+    border: none;
+    background-color: $keyword-bg-color;
+  }
+}
+
+.commentCardHeader {
+  background-color: $keyword-bg-color;
+}
+.commentCardHeader:first-child {
+  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+.commentCardHeader p {
+  color: #9a9797;
+}
+
+.toggle {
+  color: $secondary-color;
+  padding: 5px 10px;
+  border: 1px solid $secondary-color;
+  border-radius: 3px;
+}
+
+.isClosed {
+  height: 0;
+}
+.isOpen {
+  height: 200px;
+}

@@ -1,0 +1,28 @@
+@import "scss/defaultVariables.scss";
+
+.breadcrumb {
+  display: flex;
+
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  // background-color: $white;
+}
+.breadcrumbItem + .breadcrumbItem:before {
+  padding: 8px;
+  color: $white;
+  content: ">";
+}
+.breadcrumbLink {
+  color: $white;
+  text-decoration: none;
+}
+.breadcrumbLink:hover {
+  color: $white;
+  text-decoration: none !important;
+}

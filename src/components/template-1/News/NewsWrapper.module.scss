@@ -1,0 +1,24 @@
+@import 'scss/defaultVariables.scss';
+
+.wrapper {
+	.boxHeader {
+		span {
+			position: relative;
+			font-size: 1.25em;
+
+			&:after {
+				position: absolute;
+				bottom: 0;
+				height: 3px;
+				width: 100%;
+				background-color: $primary-color;
+				content: '';
+				right: 0;
+			}
+		}
+	}
+
+	.boxContent {
+		background-color: $white;
+	}
+}

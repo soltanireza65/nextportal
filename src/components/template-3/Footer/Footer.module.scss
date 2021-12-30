@@ -1,0 +1,18 @@
+.wrapper {
+  position: relative;
+}
+
+.map {
+  // position: absolute;
+  overflow: hidden;
+  min-height: 250px;
+  // top: -250px;
+  margin-bottom: -100px;
+
+  // border-radius: 25px;
+  // overflow: hidden;
+}
+.footer {
+  background-color: #3e8b6e;
+  padding-top: 150px;
+}

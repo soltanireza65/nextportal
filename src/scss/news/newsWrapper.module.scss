@@ -1,0 +1,133 @@
+@import "../defaultVariables.scss";
+
+.wrapper {
+    .boxHeader {
+        span {
+            position: relative;
+            font-size: 1.25em;
+
+            &:after {
+                position: absolute;
+                bottom: 0;
+                height: 3px;
+                width: 100%;
+                background-color: $primary-color;
+                content: "";
+                right: 0;
+            }
+        }
+    }
+
+    .boxContent {
+        background-color: $white;
+    }
+
+    .homeEditorsNoteWrapper {
+        .contentWrapper {
+            h4 {
+                font-size: 12px;
+                color: $primary-text-color;
+            }
+
+            .hasBullet {
+                position: relative;
+
+                &:before {
+                    position: absolute;
+                    right: -10px;
+                    top: 7px;
+                    content: "";
+                    border: 3px solid $primary-text-color;
+                }
+            }
+
+            h3 {
+                font-size: 13px;
+                line-height: 20px;
+            }
+
+            .titrAnchor {
+                color: #000;
+
+                &:hover {
+                    color: $green-color;
+                }
+            }
+
+            h5 {
+                font-size: 11px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                height: 15px;
+            }
+        }
+    }
+
+    .homeNoteWrapper {
+        .media:not(:last-child) {
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .media-body {
+            overflow: hidden;
+        }
+
+
+
+        .contentWrapper {
+            h4 {
+                font-size: 12px;
+                color: $primary-text-color;
+            }
+
+            h3 {
+                font-size: 13px;
+                line-height: 20px;
+            }
+
+            .titrAnchor {
+                color: #000;
+
+                &:hover {
+                    color: $green-color;
+                }
+            }
+
+            h5 {
+                font-size: 11px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                height: 15px;
+            }
+        }
+    }
+
+    .oneLineNewsWrapper {
+        .hasBullet {
+            position: relative;
+
+            &:before {
+                position: absolute;
+                right: -10px;
+                top: 7px;
+                content: "";
+                border: 3px solid $primary-text-color;
+            }
+        }
+
+        h3 {
+            font-size: 13px;
+            line-height: 20px;
+
+            .titrAnchor {
+                color: #000;
+
+                &:hover {
+                    color: $green-color;
+                }
+            }
+        }
+    }
+}

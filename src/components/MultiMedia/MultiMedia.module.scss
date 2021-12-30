@@ -1,0 +1,22 @@
+@import 'scss/defaultVariables.scss';
+
+.wrapper {
+  position: relative;
+  .contentWrapper {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    background: $black;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.75) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+
+    .titr {
+      color: $white;
+      font-size: 20px;
+    }
+  }
+}

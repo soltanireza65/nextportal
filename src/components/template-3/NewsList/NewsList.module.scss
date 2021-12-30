@@ -1,0 +1,43 @@
+@import "scss/defaultVariables.scss";
+.Wrapper {
+}
+.newsList {
+  .newsItem {
+    // box-shadow: 0px 0px 10px 5px #0000001a;
+  }
+  .newsItem:not(:last-child) {
+    // border-bottom: 1px solid #e8e8e8 !important;
+  }
+}
+
+.mediaBody {
+  // overflow: hidden;
+}
+
+.contentWrapper {
+  h4 {
+    font-size: 12px;
+    color: $primary-text-color;
+  }
+
+  h3 {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .titrAnchor {
+    color: #000;
+
+    &:hover {
+      color: $green-color;
+    }
+  }
+
+  h5 {
+    font-size: 11px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 15px;
+  }
+}

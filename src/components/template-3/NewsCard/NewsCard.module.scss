@@ -1,0 +1,6 @@
+.imgBox {
+  transition: all 1s;
+  &:hover {
+    transform: scale(1.2);
+  }
+}

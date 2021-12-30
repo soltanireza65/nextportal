@@ -1,0 +1,17 @@
+@import 'scss/defaultVariables.scss';
+.archiveToolbar,
+.archiveInner {
+	display: flex;
+	flex-direction: column;
+	width: 80vw;
+	background-color: $white;
+	box-shadow: 0px 10px 10px 0px rgba(255, 255, 255, 0.15);
+}
+
+.archiveTitle {
+	font-size: 2rem;
+	color: rgb(70, 70, 70);
+}
+
+.pagination {
+}

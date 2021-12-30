@@ -1,0 +1,19 @@
+version: "3.4"
+
+services:
+  news-front:
+    image: git.tarnamahost.ir:5050/root/nextportal/teststack
+    container_name: news-front
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
+    networks:
+      - web
+
+    restart: always
+
+networks:
+  web:
+    external: true
+

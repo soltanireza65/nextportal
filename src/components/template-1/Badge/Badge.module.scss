@@ -1,0 +1,10 @@
+@import 'scss/defaultVariables.scss';
+
+.badge {
+  top: 20px;
+  position: absolute;
+  right: 20px;
+  background-color: $primary-color;
+  color: $white;
+  font-size: 13px;
+}

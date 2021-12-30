@@ -1,0 +1,59 @@
+$primary-color: #2E86AB;
+$secondary-color: #7d7d7d;
+$dark-color: #2a2a2a;
+$header-left-color: #d8151e;
+$header-right-color: #d61717;
+$header-bottom-bgcolor: #2a2a2a;
+$home-top-text-color: #287394;
+$box-header-border-color: #d91624;
+$primary-text-color: #2E86AB;
+$bullet-color: #dc1820;
+$header-date-color: #dc1820;
+$home-date-color: #8f8e8e;
+$green-color: #67B100;
+$keyword-text-color: #8a8989;
+$keyword-bg-color: #e5e8e8;
+$item-page-mute-text-color: #676767;
+$white: #ffffff;
+$black: #000000;
+$primary-transition: all ease-in-out .3s;
+$social-box-icons-color: #222222;
+$primary-button-color: #eae7e8;
+$grey-color: #eeeeee;
+
+@mixin max-width-576 {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+
+@mixin min-width-576 {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+
+@mixin min-width-768 {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+
+@mixin min-width-992 {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin min-width-1200 {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin max-width-360 {
+    @media (max-width: 360px) {
+        @content;
+    }
+}

@@ -1,0 +1,102 @@
+@import "scss/defaultVariables.scss";
+
+.wrapper {
+  background-color: #54565a;
+  width: 100vw;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+  .form {
+    margin-top: 30vh;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+
+    .input {
+      border: none;
+      height: 40px;
+      &:nth-of-type(2) {
+        border-right: 1px solid white;
+      }
+      background-color: #54565a;
+      color: white;
+      font-size: 1.5rem;
+      flex: 1;
+    }
+  }
+}
+
+.serviceSelect,
+.serviceSelect:focus-visible {
+  border: none !important;
+  border-bottom: 1px solid $black !important;
+  flex: 1;
+}
+
+.keywords {
+  border: none;
+  border-bottom: 1px solid $black !important;
+  flex: 1;
+  height: 50px !important;
+  padding-top: 15px;
+}
+
+.searchButton {
+  background-color: $primary-color;
+  color: $white;
+  font-size: 25px;
+  border-radius: 0;
+  // border-radius: 50%;
+  // top: 0;
+  span,
+  span:hover {
+    color: $white;
+  }
+}
+.resetButton {
+  background-color: $dark-color;
+  color: $white;
+  font-size: 25px;
+  border-radius: 0;
+  // border-radius: 50%;
+  // top: 0;
+  span,
+  span:hover {
+    color: $white;
+  }
+}
+.searchInner {
+  width: 80vw;
+}
+
+.datePickerWrapper > div {
+  display: flex;
+  justify-content: space-between;
+  // flex-direction: column;
+  @include min-width-768 {
+    // flex-direction: row;
+  }
+  // @include
+  align-items: center;
+  label {
+    margin: 0;
+    display: none;
+    @include min-width-768 {
+      display: block;
+    }
+  }
+  input,
+  input:focus-visible {
+    border: none;
+    outline: none;
+    height: 50px !important;
+    // background-color: #d3d3d3;
+    border-bottom: 1px solid $secondary-color;
+    height: 100%;
+    // border-radius: 0 20px 20px 0;
+    max-width: 130px;
+    // margin-right: 10px;
+  }
+}

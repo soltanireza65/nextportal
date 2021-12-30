@@ -1,0 +1,227 @@
+@import url("../../node_modules/font-awesome/css/font-awesome.min.css");
+@import "~bootstrap/scss/bootstrap";
+@import "react-toastify/dist/ReactToastify.css";
+@import "swiper/swiper.scss";
+@import "swiper/components/navigation/navigation.scss";
+@import "swiper/components/pagination/pagination.scss";
+@import "swiper/components/scrollbar/scrollbar.scss";
+@import "swiper/components/thumbs/thumbs.scss";
+@import "mapbox-gl/dist/mapbox-gl.css";
+@import "./base.scss";
+
+:focus-visible {
+  outline: none;
+}
+
+header {
+  .header-top-container {
+    background: $primary-color;
+    @include min-width-768 {
+      min-height: 100px;
+    }
+
+    .header-top-wrapper {
+      .elements-wrapper {
+        position: relative;
+
+        .left-col {
+          position: absolute;
+          left: 0;
+        }
+
+        .header-logo-wrapper {
+          img {
+            width: 170px;
+          }
+        }
+
+        .header-top-links {
+          @include min-width-768 {
+            margin-left: 2em;
+          }
+
+          a {
+            color: white;
+
+            &:hover {
+              color: #0c232d;
+            }
+          }
+        }
+
+        .social-icons {
+          font-size: 1.75em;
+          a {
+            color: #fff;
+            svg.icon {
+              width: 10px;
+            }
+            &:hover {
+              color: #0c232d;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .header-bottom-container {
+    background-color: $header-bottom-bgcolor;
+    position: relative;
+
+    .wrapper {
+      position: relative;
+    }
+
+    .fa-bars {
+      color: #fff;
+    }
+
+    button.navbar-toggler:focus {
+      outline: 5px auto #fff;
+    }
+
+    .fa-search {
+      @include max-width-576 {
+        margin-top: 5px;
+      }
+    }
+
+    @include min-width-768 {
+      &:before {
+        content: "";
+        width: 21%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-style: solid;
+        border-width: 0 30px 36px 0;
+        border-color: transparent transparent $home-top-text-color transparent;
+      }
+    }
+
+    .date {
+      color: $home-date-color;
+    }
+
+    .search-wrapper {
+      @include min-width-768 {
+        margin-left: 4%;
+      }
+
+      a {
+        color: white;
+        font-size: 1.25em;
+      }
+    }
+
+    .menu-wrapper {
+      .nav-link {
+        color: $white;
+        font-weight: bold;
+        font-size: 11px;
+
+        @include min-width-768 {
+          padding-left: 0.25rem;
+        }
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .en-logo-wrapper {
+      z-index: 0;
+
+      @include max-width-576 {
+        position: absolute;
+        left: calc(50% - 56px);
+        top: 31px;
+      }
+    }
+  }
+}
+// main {
+//   .top-0 {
+//     top: 0;
+//   }
+// }
+
+div.service__control {
+  border-radius: 0;
+  border: 0;
+  height: 50px;
+  border-bottom: 1px solid black;
+}
+
+footer {
+  .footer-container {
+    background-color: $primary-color;
+    min-height: 250px;
+    height: auto;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      height: 5px;
+      background-color: $white;
+      width: 100%;
+      content: "";
+      right: 0;
+    }
+
+    p {
+      color: white;
+    }
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  border-radius: 50%;
+  background-color: #0000002a;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.75);
+  width: 50px;
+  height: 50px;
+  color: red;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 15px !important;
+  font-weight: bolder;
+}
+
+// .swiper-button-next,
+// .swiper-container-rtl .swiper-button-prev {
+//   right: -15px;
+//   left: auto;
+// }
+
+// .swiper-button-prev,
+// .swiper-container-rtl .swiper-button-next {
+//   left: -15px;
+//   right: auto;
+// }
+
+// .swiper {
+//   width: 100%;
+//   height: 100%;
+// }
+.swiper-container {
+  // max-height: 100% !important;
+  // height: 100% !important;
+  // overflow: hidden !important;
+}
+.swiper-slide {
+  // display: block;
+  // width: 100%;
+  // height: max-content !important;
+  // height: 100% !important;
+  // object-fit: cover;
+}
+
+.swiper-wrapper {
+}
